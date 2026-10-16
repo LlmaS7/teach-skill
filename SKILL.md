@@ -28,6 +28,8 @@ To learn at a deep level, the user needs three things:
 
 Before the `RESOURCES.md` is well-populated, your focus should be to find high-quality resources which will help the user acquire knowledge. Never trust your parametric knowledge.
 
+You may search the web at any point during teaching, without separate user confirmation, to find relevant information, reference materials, examples, or teaching media, verify claims, and fill gaps in the available resources. Follow any user-specified limits on web use and the environment's tool permissions.
+
 Some topics may require more skills than knowledge. Learning more about theoretical physics might be more knowledge-based. For yoga, more skills-based.
 
 ### Fluency vs Storage Strength
@@ -63,6 +65,8 @@ Each lesson should contain a brief reminder that the user can ask followup quest
 
 In Markdown mode, use ordinary Markdown and link supporting images or diagrams when useful. Do not create stylesheets, quiz widgets, browser tasks, or other frontend infrastructure unless the user explicitly requests them.
 
+In HTML mode, you may add images, diagrams, animations, and interactive demonstrations wherever they make an explanation easier to understand, without separate permission for each element. Place them alongside the relevant explanation and choose media that clarify the concept. Optional controls for exploring a concept, such as sliders or step-through animations, are allowed without a request for practice; quizzes and required learner tasks still require an explicit request for practice.
+
 In HTML mode, build lessons from reusable **components** stored in `./assets/`: stylesheets, quiz widgets, simulators, diagram helpers, and anything else a second HTML lesson could reuse. Before authoring an HTML lesson, read `./assets/` and reuse the components already there. When an HTML lesson needs something new and reusable, write it as a component in `./assets/` and link to it; never inline code a future lesson would duplicate.
 
 A shared stylesheet is the first component an HTML-enabled workspace earns: every HTML lesson links it, so the HTML lessons look like one consistent course rather than a pile of one-offs. As the HTML collection grows, so should the component library.
@@ -95,7 +99,7 @@ The user may specify an exact thing they want to learn. If they don't, figure ou
 
 ## Knowledge
 
-Lessons should be designed around a skill or concept the user is going to learn. The knowledge in the lesson should be only what's required to acquire it. Explain the knowledge directly by default. Add practice and an interactive feedback loop only when the user explicitly requests practice.
+Lessons should be designed around a skill or concept the user is going to learn. The knowledge in the lesson should be only what's required to acquire it. Explain the knowledge directly by default. Add practice and performance-assessment feedback loops only when the user explicitly requests practice.
 
 Knowledge should first be gathered from trusted resources. Use `RESOURCES.md` to keep track of them. Lessons should be littered with citations - links to external resources to back up any claim made. This increases the trustworthiness of the lesson.
 
@@ -105,7 +109,7 @@ For acquiring knowledge, difficulty is the enemy. It eats working memory you nee
 
 If knowledge is all about acquisition, skills are about durability and flexibility. Make the knowledge stick.
 
-Do not initiate practice solely because the topic is skill-based or because the output is HTML. Worked examples, demonstrations, and step-by-step explanations are teaching content, not practice, as long as they do not require the user to respond.
+Do not initiate practice solely because the topic is skill-based or because the output is HTML. Worked examples, demonstrations, step-by-step explanations, and optional exploratory interactions are teaching content, not practice, as long as they do not require the user to answer questions or complete tasks.
 
 Practice includes recall prompts, quizzes, tasks for the user to complete, required feedback loops, and end-of-lesson mastery checks. Use these only when the user explicitly asks for practice. When practice is requested, difficulty and effortful retrieval can build storage strength. Available approaches include:
 
