@@ -10,6 +10,9 @@ An independent adaptation of Matt Pocock's `teach` skill for guided, multi-sessi
 
 - Before the first lesson, it provides a concise learning roadmap once the learner's mission is clear. The roadmap is provisional and can change as the learner progresses.
 - Markdown is the default lesson format; HTML is used only when explicitly requested.
+- During teaching, it may search the web as needed for relevant information, reference materials, examples, and teaching media, without asking for confirmation each time. User-specified limits and the environment's tool permissions still apply.
+- HTML lessons may include images, diagrams, animations, and interactive demonstrations alongside the relevant explanations to make concepts easier to understand.
+- Optional exploratory interactions, such as sliders and step-through animations, are part of the explanation. Practice, quizzes, and required learner tasks are added only when explicitly requested.
 
 ### Files
 
@@ -38,6 +41,9 @@ Place this skill directory in your Codex skills folder as `teach` (for example, 
 
 - 在学习目标明确后、第一课开始前，先给出简短的参考学习路线图；后续可根据学习进度调整。
 - 默认使用 Markdown 编写课程内容；只有用户明确要求时才使用 HTML。
+- 教学过程中可随时按需联网搜索相关信息、参考资料、示例和教学素材，无需逐次征询；仍遵循用户指定的联网限制及运行环境的工具权限。
+- HTML 课程可在相关讲解处加入图片、图示、动画和交互演示，帮助直观理解概念。
+- 滑块、分步动画等可选探索性交互属于讲解内容；练习、测验及要求学习者完成的任务，仅在用户明确要求练习时加入。
 
 ### 文件说明
 
